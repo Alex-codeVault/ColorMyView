@@ -7,4 +7,7 @@
     <string name="box_bottom">I\'m at the bottom</string>
     <string name="label_text">how to play:</string>
     <string name="tab_info">Tab the boxes to change colors</string>
+    <string name="button_red">red</string>
+    <string name="button_blue">blue</string>
+    <string name="button_green">green</string>
 </resources>
