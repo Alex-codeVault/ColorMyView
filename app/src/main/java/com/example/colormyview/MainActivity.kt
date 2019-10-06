@@ -1,5 +1,6 @@
 package com.example.colormyview
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -16,5 +17,21 @@ class MainActivity : AppCompatActivity() {
 
     private fun setListeners() {
         val clickableViews: List<View> = listOf(textView_1, textView_2, textView_3, textView_4, textView_5)
+        for (item in clickableViews){
+            item.setOnClickListener { changeColor(it) }
+        }
+    }
+
+    private fun changeColor(view: View){
+        when(view.id){
+            R.id.textView_1 -> view.setBackgroundColor(Color.BLUE)
+            R.id.textView_2 -> view.setBackgroundColor(Color.CYAN)
+
+            R.id.textView_3 -> view.setBackgroundResource(android.R.color.holo_orange_light)
+            R.id.textView_4 -> view.setBackgroundResource(android.R.color.holo_green_light)
+            R.id.textView_5 -> view.setBackgroundResource(android.R.color.holo_red_light)
+
+            else -> view.setBackgroundColor(Color.DKGRAY)
+        }
     }
 }

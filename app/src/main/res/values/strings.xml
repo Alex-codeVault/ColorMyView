@@ -5,4 +5,6 @@
     <string name="box_sibling">I\'m your brother!</string>
     <string name="box_pal">Hi pal!</string>
     <string name="box_bottom">I\'m at the bottom</string>
+    <string name="label_text">how to play:</string>
+    <string name="tab_info">Tab the boxes to change colors</string>
 </resources>
